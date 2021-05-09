@@ -6,7 +6,7 @@ const passport = require('passport');
 const mongoose = require('mongoose');
 const config = require('./config/db');
 require('dotenv/config');
-
+ /*test*/
 
 mongoose.connect(process.env.DB_CONNECTION,config.connectionParams);
 
