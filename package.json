@@ -1,0 +1,25 @@
+{
+  "name": "mean-project",
+  "version": "1.0.0",
+  "description": "mean auth app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "^1.19.0",
+    "clarifai-nodejs-grpc": "^7.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "siddharth vyas",
+  "license": "ISC"
+}
