@@ -8,8 +8,6 @@ const config = require('./config/db');
 require('dotenv/config');
 
 
-/*Main*/
-
 mongoose.connect(process.env.DB_CONNECTION,config.connectionParams);
 
 mongoose.connection.on('connected', () =>{
