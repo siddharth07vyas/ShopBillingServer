@@ -44,10 +44,12 @@ app.use('/product', productRoutes);
 app.use('/billing', billingRoutes);
 
 
-const port = 3000;
+let port = process.env.PORT|| 3000;
 
 
-
+app.get("/", (req, res) =>{
+    res.send("Hello world");
+})
 
 app.listen(port, () =>{
 console.log('server started')
