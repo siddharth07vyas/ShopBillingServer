@@ -8,7 +8,7 @@ const config = require('./config/db');
 require('dotenv/config');
  /*test*/
 
-mongoose.connect(process.env.MONGODB_URI,config.connectionParams);
+mongoose.connect(process.env.DB_CONNECTION,config.connectionParams);
 
 mongoose.connection.on('connected', () =>{
     console.log('connected')
